@@ -20,11 +20,15 @@ public class Book extends Product
         this.author = author;
     }
 
+    
     @Override
     public String toString()
     {
-        return super.toString() + "Author:      " +
-            author + "\n";
+        return "Code:        " + super.getCode() + "\n" +
+               "Description: " + description + "\n" +
+        		"Author:     " + author + "\n"+
+               "Price:       " + this.getFormattedPrice() + 
+               "\n";
     }
 }
 

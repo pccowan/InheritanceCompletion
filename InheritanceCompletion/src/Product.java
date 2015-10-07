@@ -2,7 +2,7 @@ import java.text.NumberFormat;
 
 public class Product
 {
-    private String code;
+    protected String code;
     protected String description;
     protected double price;
     protected static int count = 0;

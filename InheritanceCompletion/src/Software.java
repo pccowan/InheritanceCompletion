@@ -17,11 +17,14 @@ public class Software extends Product
     {
         return version;
     }
-
     @Override
     public String toString()
     {
-        return super.toString() + "Version:     " +
-            version + "\n";
+        return "Code:        " + super.getCode() + "\n" +
+               "Description: " + description + "\n" +
+        		"Version:     " + version + "\n"+
+               "Price:       " + this.getFormattedPrice() + 
+               "\n";
     }
+   
 }
